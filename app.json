@@ -1,10 +1,15 @@
 {
   "expo": {
     "scheme": "acme",
+    "newArchEnabled": true,
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-sqlite"
     ],
     "name": "my-app",
-    "slug": "my-app"
+    "slug": "my-app",
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
