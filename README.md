@@ -1,13 +1,16 @@
-# Expo Router Example
+# Expo Router Example - Tabs, Modal and SQLite
 
 Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
 
 ## 🚀 How to use
 
 ```sh
-npx create-expo-app -e with-router
+npx create-expo-app@latest -e with-router
 ```
 
-## 📝 Notes
+## Links
 
 - [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+- [Expo Router Tabs: Docs](- https://docs.expo.dev/router/advanced/tabs/)
+- [Expo Router Modal: Docs](https://docs.expo.dev/router/advanced/modals/)
+- [Expo SQLite: Docs](https://docs.expo.dev/versions/latest/sdk/sqlite/)
