@@ -11,6 +11,6 @@ npx create-expo-app@latest -e with-router
 ## Links
 
 - [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
-- [Expo Router Tabs: Docs](- https://docs.expo.dev/router/advanced/tabs/)
+- [Expo Router Tabs: Docs](https://docs.expo.dev/router/advanced/tabs/)
 - [Expo Router Modal: Docs](https://docs.expo.dev/router/advanced/modals/)
 - [Expo SQLite: Docs](https://docs.expo.dev/versions/latest/sdk/sqlite/)
