@@ -2,6 +2,9 @@
 
 Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
 
+## VIDEO WALKTHROUGH
+- https://youtu.be/vgPdAARd6Gw?si=zW5WAuDE7af2wgTt
+
 ## 🚀 How to use
 
 ```sh
