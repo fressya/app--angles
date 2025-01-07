@@ -31,9 +31,10 @@ export default function TabHome() {
 
   const loadData = async () => {
     try {
-      const result = await database.getAllAsync<{ id: number; title: string }>(
-        "SELECT id, title FROM items"
-      );
+      const query = "SELECT id, title FROM items";
+      console.log("Executing query:", query);
+      const result = await database.getAllAsync<{ id: number; title: string }>(query);
+      console.log("Query result:", result);
       setData(result);
     } catch (error) {
       console.error("Error loading data:", error);

@@ -4,12 +4,27 @@
     "newArchEnabled": true,
     "plugins": [
       "expo-router",
-      "expo-sqlite"
+      "expo-sqlite",
+      "expo-build-properties"
     ],
     "name": "my-app",
     "slug": "my-app",
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "506e75ad-b479-4f82-8859-2471ab1c93b9"
+      }
+    },
+    "android": {
+      "package": "com.luciagr.myapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.luciagr.myapp"
     }
   }
 }
