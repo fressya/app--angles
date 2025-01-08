@@ -31,15 +31,23 @@ export default function TabHome() {
 
   const loadData = async () => {
     try {
-      const query = "SELECT id, title FROM items";
+      const query = "SELECT id, angles AS title FROM items";
       console.log("Executing query:", query);
       const result = await database.getAllAsync<{ id: number; title: string }>(query);
-      console.log("Query result:", result);
-      setData(result);
+  
+      // Procesar los datos para deserializar las cadenas JSON
+      const parsedData = result.map(item => ({
+        ...item,
+        title: JSON.parse(item.title), // Deserializar JSON
+      }));
+  
+      console.log("Parsed query result:", parsedData);
+      setData(parsedData);
     } catch (error) {
       console.error("Error loading data:", error);
     }
   };
+  
 
   return (
     <View>
